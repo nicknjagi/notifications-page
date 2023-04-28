@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Notifications page</title>
+
+</head>
+<body>
+  <main class="container">
+    <div class="title">
+      <h1>Notifications </h1>
+      <span id="notifications">3</span>
+      <button id="mark-all" >Mark all as read</button>
+    </div>
+  
+    <div class="card-container">
+      <div class="card" >
+        <div>
+          <img src="./assets/images/avatar-mark-webber.webp" alt="Mark Webber" />
+        </div>
+        <div>
+          <p>
+            <span class="username"><a href="#">Mark Webber</a></span> reacted to your recent post <span><a href="#" class="link"> My first tournament today!</a></span><span class="status"></span>
+          </p>
+          <span class="timestamp">1m ago</span>
+        </div>
+      </div>
+  
+      <div class="card" >
+        <div>
+          <img src="./assets/images/avatar-angela-gray.webp" alt="Angela Gray" />
+        </div>
+        <div>
+          <p>
+            <span class="username"><a href="#">Angela Gray </a></span> followed you<span class="status"></span>
+          </p>
+          <span class="timestamp">5m ago</span>
+        </div>
+      </div>
+  
+      <div class="card" >
+        <div>
+          <img src="./assets/images/avatar-jacob-thompson.webp" alt="Jacob Thompson" />
+        </div>
+        <div>
+          <p>
+            <span class="username"><a href="#">Jacob Thompson</a></span> has joined your group<span class="group-name"><a href="#"> Chess Club</a></span>
+            <span class="status"></span>
+          </p>
+          <span class="timestamp">1 day ago</span>
+        </div>
+      </div>
+  
+      <div class="card read" >
+        <div>
+          <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="Rizky Hasanuddin" />
+        </div>
+        <div>
+          <p>
+            <span class="username"><a href="#">Rizky Hasanuddin</a></span> sent you a private message<span class="status"></span>
+          </p>
+          <span class="timestamp">5 days ago</span>
+          <p class="message">
+            Hello, thanks for setting up the Chess Club. I've been a member
+            for a few weeks now and I'm already having lots of fun and
+            improving my game.
+          </p>
+        </div>
+      </div>
+  
+      <div class="card read" >
+        <div>
+          <img src="./assets/images/avatar-kimberly-smith.webp" alt="Kimberly Smith" />
+        </div>
+        <div>
+          <p>
+            <span class="username"><a href="#">Kimberly Smith</a></span> commented on your picture<span class="status"></span>
+          </p>
+          <span class="timestamp">1 week ago</span>
+        </div>
+        <div class="pic">
+          <img src="./assets/images/image-chess.webp" alt="a lady playing chess" />
+        </div>
+      </div>
+  
+      <div class="card read" >
+        <div>
+          <img src="./assets/images/avatar-nathan-peterson.webp" alt="Nathan Peterson" />
+        </div>
+        <div>
+          <p>
+            <span class="username"><a href="#">Nathan Peterson</a></span> reacted to your recent post<span><a href="#" class="link"> 5 end-game strategies to increase your win rate</a>
+            </span>
+            <span class="status"></span>
+          </p>
+          <span class="timestamp">2 weeks ago</span>
+        </div>
+      </div>
+  
+      <div class="card read" >
+        <div>
+          <img src="./assets/images/avatar-anna-kim.webp" alt="Anna Kim" />
+        </div>
+        <div>
+          <p>
+            <span class="username"><a href="#">Anna Kim</a></span> left the group<span class="group-name"><a href="#"> Chess Club</a></span>
+            <span class="status"></span>
+          </p>
+          <span class="timestamp">2 weeks ago</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+:root {
+  /* Primary */
+  --Red: hsl(1, 90%, 64%);
+  --Blue: hsl(219, 85%, 26%);
+
+  /* Neutral */
+  --White: hsl(0, 0%, 100%);
+  --Very-light-grayish-blue: hsl(210, 60%, 98%);
+  --Light-grayish-blue-1: hsl(211, 68%, 94%);
+  --Light-grayish-blue-2: hsl(205, 33%, 90%);
+  --Grayish-blue: hsl(219, 14%, 63%);
+  --Dark-grayish-blue: hsl(219, 12%, 42%);
+  --Very-dark-blue: hsl(224, 21%, 14%);
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 16px;
+  background-color: white;
+}
+
+.container {
+  background-color: white;
+  border-radius: 10px;
+  max-width: 730px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 800;
+  display: inline-block;
+}
+
+#notifications {
+  padding: 0px 13px 2px;
+  background-color: var(--Blue);
+  color: white;
+  border-radius: 6px;
+  margin-left: 5px;
+}
+
+#mark-all {
+  border: transparent;
+  background-color: transparent;
+  color: var(--Dark-grayish-blue);
+  font-weight: 500;
+  margin-left: auto;
+}
+
+#mark-all:hover {
+  color: var(--Blue);
+  cursor: pointer;
+}
+
+.card-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  text-align: left;
+  background-color: var(--Very-light-grayish-blue);
+  border-radius: 10px;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card.read {
+  background-color: white;
+}
+
+.card img {
+  width: 40px;
+  margin: 0 auto;
+}
+
+.username a {
+  color: var(--Very-dark-blue);
+  font-weight: 800;
+}
+
+.username a,
+.link,
+.group-name a {
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.link:hover,
+.group-name a:hover,
+.username a:hover {
+  color: var(--Blue);
+}
+
+.link {
+  color: var(--Dark-grayish-blue);
+}
+
+.group-name a {
+  color: var(--Blue);
+}
+
+.timestamp {
+  display: block;
+  color: var(--Grayish-blue);
+}
+
+.message {
+  color: var(--Very-dark-blue);
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border: 2px solid #e8e8e8;
+  border-radius: 5px;
+}
+
+.message:hover {
+  border: 2px solid transparent;
+  background-color: var(--Light-grayish-blue-1);
+  cursor: pointer;
+}
+
+.pic {
+  margin-left: auto;
+}
+
+.status {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+  background-color: var(--Red);
+  border-radius: 50%;
+}
+
+.read .status {
+  display: none;
+}
+
+@media screen and (min-width:600px) {
+  body {
+    background-color: #F9FAFE;
+    padding: 3rem 1rem;
+  }
+  .container {
+    padding: 0 2rem 10px;
+  }
+}
+
