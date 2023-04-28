@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/nicknjagi/notifications-page)
-- Live Site URL: [visit↗](https://phenomenal-paletas-63aa89.netlify.app/)
+- Live Site URL: [visit↗](https://nicknjagi.github.io/notifications-page/)
 
 ## My process
 
